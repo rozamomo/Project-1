@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurnStudio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container main-menu">
+        <h2 class="logo">
+          <a href="#"><span>Burn</span>Studio</a>
+        </h2>
+        <nav id="my-nav" class="my-nav">
+          <ul>
+            <li><a herf="#" class="active-link">Portfolio</a></li>
+            <li class="devider">/</li>
+            <li><a herf="#">About me</a></li>
+            <li class="devider">/</li>
+            <li><a herf="#">contact me</a></li>
+          </ul>
+        </nav>
+        <div class="menu-btn">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <h2>I'm a Graphic/Web Designer based in Bangladesh</h2>
+      <p>
+        This is photoshop's version of LOrem Ipsum.POringravida nibh vel velit
+        auctor aliquet.Aenean sollicitudin ,loremquis bibendum auctor,nisielit
+        consequat ipsum,nec sagittis sem nibh id elit.
+      </p>
+      <a href="#">Hire Me</a>
+    </section>
+    <section class="project">
+      <div class="container">
+        <h2 class="header"> My Latest Project</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="img/btfly.jpg" alt="" />
+              <h2>1WD.TV project</h2>
+              <i>Web Design,Freelance</i>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="img/btfly.jpg " alt="" />
+              <h2>1WD.TV project</h2>
+              <i>Web Design,Freelance</i>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="img/btfly.jpg " alt="" />
+              <h2>1WD.TV project</h2>
+              <i>Web Design,Freelance</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-me">
+              <h2 class="heading">About Me</h2>
+              <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                nibh id elit. <br /><br />
+
+                Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                mauris vitae erat consequat auctor eu in elit. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu
+                felis dapibus condimentum sit amet a augue.
+              </p>
+              <div class="social-img">
+                <img src="img/fb.png" alt="" />
+                <img src="img/twitter.png" alt="" />
+                <img src="img/rss.png" alt="" />
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="whats-new">
+                <h2 class="heading">What's New?</h2>
+                <div class="new-block">
+                  <img src="img/Rectangle 3.png" alt="" />
+                  <div class="block-text">
+                    <h2>This is Photoshop's version of Lorem Ipsum.</h2>
+                    <p>
+                      <span>Web Design</span> - January 28, 2013 -
+                      <span>Admin</span>
+                    </p>
+                  </div>
+                </div>
+                <hr class="line" />
+                <div class="new-block top-30">
+                  <img src="img/Rectangle 3.png" alt="" />
+                  <div class="block-text">
+                    <h2>This is Photoshop's version of Lorem Ipsum.</h2>
+                    <p>
+                      <span>Web Design</span> - January 28, 2013 -
+                      <span>Admin</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container my-footer">
+        <p>Copyright 2013 <span>BurnStudio</span></p>
+        <nav>
+          <ul>
+            <li><a herf="#" class="active-link-footer">Portfolio</a></li>
+            <li class="devider">/</li>
+            <li><a herf="#">About me</a></li>
+            <li class="devider">/</li>
+            <li><a herf="#">contact me</a></li>
+          </ul>
+        </nav>
+      </div>  
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var nav = document.getElementById("my-nav");
+var btn = document.querySelector(".menu-btn");
+
+var menuOpen = false;
+btn.addEventListener("click", function () {
+  if (menuOpen == false) {
+    nav.style.right = "0%";
+    menuOpen = true;
+  } else if (menuOpen == true) {
+    nav.style.right = "-80%";
+    menuOpen = false;
+  }
+});
+
+    </script>
+  </body>
+</html>
